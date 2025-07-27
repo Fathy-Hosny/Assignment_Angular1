@@ -1,0 +1,104 @@
+.bgg {
+  background-color: #ffffff;
+}
+.mrgt {
+  margin-top: 7%;
+  color: #002564 !important;
+}
+
+.icon-line {
+  position: relative;
+  color: #002564 !important;
+}
+
+.icon-line::before,
+.icon-line::after {
+  content: "";
+  position: absolute;
+  background-color: #002564 !important;
+
+  width: 400%;
+  height: 20%;
+  top: 50%;
+}
+
+.icon-line::before {
+  right: 120%;
+}
+
+.icon-line::after {
+  left: 120%;
+}
+
+.shadow-custom {
+  box-shadow: 0 8px 9px rgba(0, 0, 0, 0.3);
+}
+.zoom-img:hover .content {
+  opacity: 1;
+  transform:  scale(1.1);
+  pointer-events: auto;
+}
+
+.ico-circl {
+  width: 60px;
+  height: 60px;
+ 
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+  color: #ffffff;
+  cursor: pointer; 
+}
+
+.ico-circl:hover {
+
+  color: #000000;
+}
+.font-o {
+  font-size: 400%;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.img1 {
+  position: relative;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  padding: 1% 3%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #067310ac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 1s;
+    cursor: pointer;
+}
+.content:hover {
+  opacity: 1;
+}
+
+
+.zoom-img {
+  position: relative;
+  overflow: hidden;
+}
+.zoom-img img {
+  cursor: pointer;
+}
+.card img {
+  transition: 1s;
+}
+.card:hover .zoom-img img {
+  transform: scale(1.2);
+}

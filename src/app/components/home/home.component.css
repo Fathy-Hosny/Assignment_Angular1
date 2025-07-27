@@ -1,0 +1,33 @@
+.bgg {
+  height: 100vh;
+  background-color: rgb(140, 0, 255);
+}
+
+img {
+    
+  width: 15%;
+}
+
+
+.icon-line {
+  position: relative;
+}
+
+.icon-line::before,
+.icon-line::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 400%;
+  height: 20%;
+  top: 50%;
+
+}
+
+.icon-line::before {
+  right: 120%;
+}
+
+.icon-line::after {
+  left: 120%;
+}

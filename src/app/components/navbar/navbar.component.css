@@ -1,0 +1,26 @@
+.my-bg {
+  z-index: 999;
+  background-color: rgb(0, 23, 47) !important;
+}
+
+.nn {
+  font-size: 120% !important;
+  border-radius:  20px;
+
+  transition: 0.7s;
+}
+.nn:hover{
+  background-color: rgb(13, 136, 174);
+
+}
+.nn1 {
+
+background-color: rgb(13, 136, 174);
+border-radius:  20px;
+
+
+}
+
+.h12 {
+  height: 15%;
+}

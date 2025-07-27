@@ -1,0 +1,43 @@
+.h11{
+    height: 30vh;
+
+}
+.backg{
+background-color: rgb(35, 47, 50);
+}
+.backg1{
+background-color: rgb(35, 47, 50);
+
+
+}
+.card {
+  border: none !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+}
+
+.ico-o {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0 2px #ffffff;
+  transition: 0.5s ease;
+  color: white;
+  font-size: 20px;
+}
+
+ .ico-o:hover{
+  background-color: #ffffff;
+  color: #030303;
+  box-shadow: 0 0 0 3px #000000;
+
+}
+
+
+.ico-o i{
+    font-size: 80%;
+}
