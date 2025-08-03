@@ -1,19 +1,72 @@
 <section
   id="contact.component.html"
-  class="bgg text-center mx-auto  p-5 mb-5"
+  class="vh-100 d-flex justify-content-center align-items-center flex-column"
 >
-  <h1 class="fs-1 text-uppercase fw-bold mrgt">conatct section </h1>
+  <h1 class="fs-1 text-uppercase fw-bold mrgt">conatct section</h1>
   <div class="icon-line position-relative d-inline-block mt-1 mrgt2">
     <i class="fa-solid fa-star fs-5"></i>
   </div>
 
-   <div class="contact-form text-end mt-5">
-    <input type="text" placeholder="userName">
-    <input type="number" placeholder="userAge">
-    <input type="email" placeholder="userEmail">
-    <input type="password" placeholder="userPassword">
-    <button class="fw-semibold">send Message</button>
-  </div>
+  <form class="mx-auto w-50 mt-5">
+    <label
+      for="UserName"
+      class="text-success my-2 position-relative top-0"
+      [class.top-40]="!UserName.length"
+      >User Name :</label
+    >
+    <input
+    
+      type="text"
+        [(ngModel)]="UserName"
+        name="UserName"
+      class="mb-4 form-control shadow-none border-end-0 border-start-0 border-top-0 position-relative"
+      placeholder="User Name"
+    />
 
+      <label
+      for="UserAge"
+      class="text-success mb-2  position-relative top-0"
+      [class.top-30]="!UserAge"
+      >User Age :</label
+    >
+
+    <input
+      type="number"
+       [(ngModel)]="UserAge"
+        name="UserAge"
+      class="mb-4 form-control shadow-none border-end-0 border-start-0 position-relative border-top-0"
+      placeholder="User Age"
+    />
+
+         <label
+      for="Useremail"
+      class="text-success mb-2 position-relative top-0"
+      [class.top-40]="!Useremail.length"
+      >User email :</label
+    >
+    
+    <input
+      type="email"
+        [(ngModel)]="Useremail"
+        name="Useremail"
+      class="mb-4 form-control shadow-none border-end-0 border-start-0 position-relative  border-top-0"
+      placeholder="User Email"
+    />
+             <label
+      for="UserPassword"
+      class="text-success mb-2  position-relative top-0"
+      [class.top-40]="!UserPassword.length"
+      >User Password :</label
+    >
+    <input
+      type="Password"
+        [(ngModel)]="UserPassword"
+      name="UserPassword"
+      class="mb-4 form-control shadow-none position-relative border-end-0 border-start-0 border-top-0"
+      placeholder="User Password"
+    />
+    <button class="fw-semibold btn btn-dark btn-outline-primary">
+      Send Message
+    </button>
+  </form>
 </section>
-

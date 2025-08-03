@@ -1,28 +1,30 @@
-.bgg {
-  height: 100vh;
-  background-color: rgb(255, 255, 255);
+.mrgt {
+  margin-top: 7%;
+  color: #4e4d52 !important;
 }
-.mrgt{
-    margin-top: 7%;
-    color:  #4e4d52 !important;
+.top-40 {
+  top: 40px !important;
 }
-
+.top-30 {
+  top: 30px !important;
+}
+label{
+  transition: 0.7s;
+}
 .icon-line {
   position: relative;
-    color:  #4d524f !important;
-
+  color: #4d524f !important;
 }
 
 .icon-line::before,
 .icon-line::after {
   content: "";
   position: absolute;
-  background-color:  #4d524f !important;
+  background-color: #4d524f !important;
 
   width: 400%;
   height: 20%;
   top: 50%;
-
 }
 
 .icon-line::before {
@@ -33,39 +35,23 @@
   left: 120%;
 }
 
-
-
 .contact-form {
-  width: 50%;
-  height: 30%;
-  margin:  auto;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
   text-align: right;
 }
 
-.contact-form input {
-  width: 100%;
-  padding: 10px;
-  margin: 3% 0;
+button {
+  width: auto;
+  padding: 12px 20px;
 
   border: none;
-  border-bottom: 2px solid #ccc;
-  background: transparent;
-  outline: none;
-}
 
-.contact-form button {
-  width: 20%;
-  padding: 10px;
-  margin-top: 20px;
-  margin-right: 100%;
-  background-color: #56c470;
-  color: white;
-  border: none;
-  /* font-size: 1em; */
-  cursor: pointer;
-  border-radius: 5px;
-}
+  border-radius: 8px;
 
-.contact-form button:hover {
-  background-color: #048320;
+  transition: 0.7s ease;
+
+  display: block;
+  margin-right: auto;
 }

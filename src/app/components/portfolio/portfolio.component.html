@@ -1,7 +1,4 @@
-<section
-  id="portfolio.component.html"
-  class="bgg text-center mx-auto my-5 mb-5"
->
+<section id="portfolio.component.html" class="bgg text-center mx-auto p-5 mb-5">
   <h1 class="fs-1 text-uppercase fw-bold mrgt">portfolio component</h1>
   <div class="icon-line position-relative d-inline-block mt-1 mrgt2">
     <i class="fa-solid fa-star fs-5"></i>
@@ -10,26 +7,30 @@
     <div class="row">
       @for (Srcimgs of repeatedImgs(); track $index) {
       <div class="col-md-4 mt-5 mb-4">
-        <div class="card shadow-custom">
-          <div class="zoom-img">
-            <img class="card-img-top" [src]="Srcimgs" alt="Title" />
-            <a class="text-decoration-none" href=""> </a>
-            <div class="content text-center align-items-center">
-              
+        <figure 
+          class="zoom-img shadow-custom position-relative overflow-hidden"
+        >
+          <img class="w-100 rounded-3" [src]="Srcimgs" alt="Title" />
 
-          
-              <div class="icon mb-3">
-                <span class="ico-circl ">
-                <i class="font-o fa-solid fa-plus"></i>
-                </span>
-              </div>
-            </div>
-            
-          </div>
-        </div>
+          <figcaption
+          (click)="flag=false; modelImg=Srcimgs"
+            class="position-absolute start-0 top-0 d-flex justify-content-center align-items-center w-100 h-100 content "
+          >
+            <i class="fa-solid fa-plus fa-6x ico-circl"></i>
+          </figcaption>
+        </figure>
       </div>
 
       }
     </div>
   </div>
 </section>
+
+<div 
+(click)="hideModel($event.target, img)"
+[class.d-none]="flag"
+
+  class="model img1 position-fixed w-100  h-100 start-0 top-0 d-flex justify-content-center align-items-center bg-primary bg-opacity-25"
+>
+  <img #img class="rounded-3 "  [src]="modelImg" alt="Title" width="650"/>
+</div>

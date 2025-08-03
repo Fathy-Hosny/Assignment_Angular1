@@ -9,6 +9,24 @@ img {
 }
 
 
+
+@media (max-width: 768px) {
+  img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  img {
+    width: 250px;
+  }
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+}
+
 .icon-line {
   position: relative;
 }

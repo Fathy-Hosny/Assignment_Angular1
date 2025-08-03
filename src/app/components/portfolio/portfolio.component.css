@@ -33,54 +33,32 @@
 .shadow-custom {
   box-shadow: 0 8px 9px rgba(0, 0, 0, 0.3);
 }
-.zoom-img:hover .content {
-  opacity: 1;
-  transform:  scale(1.1);
-  pointer-events: auto;
+
+.zoom-img img {
+  transition: 1s;
+}
+
+.zoom-img:hover img {
+  transform: scale(1.1);
 }
 
 .ico-circl {
-  width: 60px;
-  height: 60px;
- 
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+color: #ffffff;
   transition: 0.5s ease;
-  color: #ffffff;
-  cursor: pointer; 
+
 }
 
 .ico-circl:hover {
 
-  color: #000000;
-}
-.font-o {
-  font-size: 400%;
-  font-style: italic;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
+  color: #ff0000;
 }
 
-.img1 {
-  position: relative;
-}
+
 .content {
-  width: 100%;
-  height: 100%;
-  padding: 1% 3%;
-  top: 0;
-  left: 0;
-  position: absolute;
+ 
   background-color: #067310ac;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   opacity: 0;
+
   transition: 1s;
     cursor: pointer;
 }
@@ -89,16 +67,15 @@
 }
 
 
-.zoom-img {
-  position: relative;
-  overflow: hidden;
-}
-.zoom-img img {
+ img {
   cursor: pointer;
 }
-.card img {
+img {
   transition: 1s;
 }
 .card:hover .zoom-img img {
   transform: scale(1.2);
+}
+.img1{
+  z-index: 99;
 }
